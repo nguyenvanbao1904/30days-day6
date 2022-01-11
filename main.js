@@ -14,4 +14,7 @@ document.addEventListener('keydown',function(e){
     locations.innerHTML = e.location
     which.innerHTML = e.which
     code.innerHTML = e.code
+    if(e.which== 32){
+        key.innerHTML = 'Space'
+    }
 })
