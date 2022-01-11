@@ -10,11 +10,12 @@ document.addEventListener('keydown',function(e){
     notification.classList.add('hiden')
     container.classList.remove('hiden')
     result.innerHTML = e.which
-    key.innerHTML = e.key
+    if(e.which== 32){
+        key.innerHTML = 'Space'
+    } else{
+        key.innerHTML = e.key
+    }
     locations.innerHTML = e.location
     which.innerHTML = e.which
     code.innerHTML = e.code
-    if(e.which== 32){
-        key.innerHTML = 'Space'
-    }
 })
